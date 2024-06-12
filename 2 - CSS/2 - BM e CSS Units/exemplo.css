@@ -1,0 +1,16 @@
+.pai {
+    width: 70vw;
+    height: 65vh;
+    background-color: whitesmoke
+}
+
+.filho {
+    width: 35%;
+    height: 70%;
+    background-color: chocolate;
+    color: white;
+    font-size: 42px;
+    padding: 120px 0px 0px 150px;
+    margin: 150px 20px 50px 570px;
+    border: 30px solid rgb(56, 56, 56);
+}

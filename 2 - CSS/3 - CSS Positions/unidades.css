@@ -1,0 +1,23 @@
+* { /* root da página (RESETANDO) */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%; /* determinado o tamnho padrão de texto da página */
+}
+
+
+.container {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+p {
+    font-size: 2.1rem;
+}
+
+h2 {
+    font-size: 4rem;
+}

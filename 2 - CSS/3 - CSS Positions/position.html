@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Positions</title>
+    <link rel="stylesheet" href="position.css">
+  </head>
+  <body>
+    <main>
+
+      <article>
+        <h1>POSITIONS</h1>
+        <p>
+          No que diz respeito a controle de posições dos elementos HTML, existem
+          várias formas para alcançar tal resultado (positions, display, float),
+          hoje iremos abordar sobre as variações da propriedade position.
+        </p>
+        <p>
+          Position é um módulo do CSS que define como ficam as posições dos
+          elementos relativos e absolutos da página, fazendo referência aos valores
+          atribuídos quanto ao top, bottom, right e left. Esta propriedade funciona
+          perfeitamente nos navegadores desde a versão 2.1 do CSS, onde o seu foco é
+          apenas o de posicionar <strong>pequenos</strong> detalhes do layout (para
+          diagramar utilize Flexbox e Grid).
+        </p>
+        <p>
+          A propriedade em questão pode assumir 5 valores diferentes: Static,
+          Relative, Absolute, Fixed e Sticky. Segue explicação de cada uma:
+        </p>
+      </article>
+
+      <section>
+        <main>
+          <h2>CSS Position Static:</h2>
+          <p>
+              Esse é o valor default de todo elemento HTML, ou seja, ele vai seguir o
+              fluxo comum da sua página. Para declará-lo faça:
+           </p>
+        </main>
+
+        <section>
+            <code>
+                <pre>
+                    <span class="Seletor">Seletor</span> {
+                    <span class="Propriedade">position:</span> <span class="Valor">static;</span>
+                   }
+                </pre>
+            </code>
+         </section>    
+      </section>
+
+      <section>
+        <main>
+          <h2>CSS Position Relative</h2>
+          <p>
+            Utilizando o position Relative o elemento passa a aceitar as propriedades
+            Top, Bottom, Left e Right. Com elas você pode alterar o posicionamento do
+            elemento. Ex:
+          </p>
+        </main>
+        <section>
+          <span>HTML:</span>
+          <code>
+            <pre>
+                  &lt;<span class="Tag">div</span>&gt;
+                      &lt;<span class="Tag">h1</span>&gt;Sou um h1&lt;<span class="Tag">/h1</span>&gt;
+                      &lt;<span class="Tag">h2</span>&gt;Sou um h2&lt;<span class="Tag">/h2</span>&gt;
+                    &lt;<span class="Tag">/div</span>&gt;
+              </pre>
+          </code>
+        </section>
+
+        <section>
+          <span>CSS:</span>
+          <code>
+            <pre>
+                  <span class="Seletor">div</span> { <span class="Propriedade">background:</span> <span class="Valor">#eee;</span> <span class="Propriedade">margin:</span> <span class="Valor">200px 200px;</span> <span class="Propriedade">width:</span> <span class="Valor">300px;</span> <span class="Propriedade">height:</span> <span class="Valor">300px;</span> }
+                <span class="Seletor">h1</span> { <span class="Propriedade">position:</span> <span class="Valor">relative;</span> <span class="Propriedade">top:</span> <span class="Valor">20px;</span> <span class="Propriedade">left:</span> <span class="Valor">20px;</span> }
+                <span class="Seletor">h2</span> { <span class="Propriedade">top:</span> <span class="Valor">20px;</span> <span class="Propriedade">left:</span> <span class="Valor">20px;</span> }
+              </pre>
+          </code>
+        </section>
+      </section>
+
+      <section>
+        <main>
+          <h2>CSS Position Absolute</h2>
+          <p>
+            O position Absolute é um grande quebra galho no
+            <strong><ins>CSS</ins></strong
+            >. Com ele você pode posicionar qualquer elemento de acordo com o elemento
+            pai que tenha um position diferente de static.
+          </p>
+        </main>
+
+        <section>
+          <code>
+            <pre>
+                  &lt;<span class="Tag">div</span>&gt;
+                      &lt;<span class="Tag">h1</span>&gt;
+          
+                          &lt;<span class="Tag">span</span>&gt;&lt;<span class="Tag">/span</span>&gt;
+          
+                      &lt;<span class="Tag">/h1</span>&gt;
+          
+                      &lt;<span class="Tag">p</span>&gt;&lt;<span class="Tag">/p</span>&gt;
+                  &lt;<span class="Tag">/div</span>&gt;
+              </pre>
+          </code>
+          <p>
+            O elemento DIV é pai dos elementos H1, P e SPAN. Os elementos H1, P e SPAN
+            são filhos do elemento DIV. Os elementos H1 e P são irmãos por estarem no
+            mesmo nível. E o elemento SPAN é filho do elemento H1 e também do elemento
+            DIV.
+          </p>
+        </section>
+
+        <section>
+          <p>HTML:</p>
+          <code>
+            <pre>
+                  &lt;<span class="Tag">div</span>&gt;
+                      &lt;<span class="Tag">h1</span>&gt;Sou um h1&lt;<span class="Tag">/h1</span>&gt;
+                      &lt;<span class="Tag">h2</span>&gt;Sou um h2&lt;<span class="Tag">/h2</span>&gt;
+                    &lt;<span class="Tag">/div</span>&gt;
+              </pre
+            >
+          </code>
+        </section>
+
+        <section>
+          <p>CSS:</p>
+          <code>
+            <pre>
+                  <span class="Seletor">div</span> { <span class="Propriedade">background:</span> <span class="Valor">#eee;</span> <span class="Propriedade">margin:</span> <span class="Valor">50px;</span>
+                              <span class="Propriedade">width:</span> <span class="Valor">300px;</span> <span class="Propriedade">height:</span> <span class="Valor">300px;</span> <span class="Propriedade">position:</span> <span class="Valor">relative;</span>}
+                <span class="Seletor">h1</span> { <span class="Propriedade">position:</span> <span class="Valor">absolute;</span> <span class="Propriedade">top:</span> <span class="Valor">20px;</span> <span class="Propriedade">left:</span> <span class="Valor">20px;</span>
+                              <span class="Propriedade">outline:</span> <span class="Valor">1px solid #444;</span> }
+                <span class="Seletor">h2</span> { <span class="Propriedade">outline:</span> <span class="Valor">1px solid #f90;</span> }
+              </pre>
+          </code>
+          <p>
+            Observação: podemos utilizar tanto medidas positivas quanto
+            <strong>negativas</strong>, e assim, posicionar os elementos em locais que
+            antes seriam impossíveis de serem alcançados.
+          </p>
+        </section>
+      </section>
+
+      <section>
+        <main>
+          <h2>CSS Position Fixed:</h2>
+          <p>
+            O position fixed se comporta de maneira semelhante ao absolute, deixando
+            de fazer parte do fluxo comum da página. Porém a grande diferença dele é
+            que ele passa a se referenciar ao window do seu navegador, ou seja, a área
+            que aparece para o usuário independente de barra de rolagem.
+          </p>
+        </main>
+
+        <section>
+          <p>HTML:</p>
+          <code>
+            <pre>
+                  &lt;<span class="Tag">div</span>&gt;
+                      &lt;<span class="Tag">h1</span>&gt;Sou um h1&lt;<span class="Tag">/h1</span>&gt;
+                      &lt;<span class="Tag">h2</span>&gt;Sou um h2&lt;<span class="Tag">/h2</span>&gt;
+                    &lt;<span class="Tag">/div</span>&gt;
+              </pre
+            >
+          </code>
+        </section>
+
+        <section>
+          <p>CSS:</p>
+          <code>
+            <pre>
+                  <span class="Seletor">body</span> { <span class="Propriedade">background:</span> <span class="Valor">#000;</span> }
+              <span class="Seletor">div</span> { <span class="Propriedade">background:</span> <span class="Valor">#f90;</span> <span class="Propriedade">width:</span> <span class="Valor">300px;</span> <span class="Propriedade">height:</span> <span class="Valor">1500px;</span> <span class="Propriedade">position:</span> <span class="Valor">relative;</span> }
+              <span class="Seletor">h1</span> { <span class="Propriedade">position:</span> <span class="Valor">fixed;</span> <span class="Propriedade">top:</span> <span class="Valor">0;</span> <span class="Propriedade">left:</span> <span class="Valor">20px;</span> <span class="Propriedade">right:</span> <span class="Valor">20px;</span>
+                   <span class="Propriedade">outline:</span> <span class="Valor">1px solid #444; background: #fff;</span>  }
+              <span class="Seletor">h2</span> { <span class="Propriedade">position:</span> <span class="Valor">fixed;</span> <span class="Propriedade">bottom:</span> <span class="Valor">0;</span> <span class="Propriedade">left:</span> <span class="Valor">20px;</span> <span class="Propriedade">right:</span> <span class="Valor">20px;</span>
+                  <span class="Propriedade">outline:</span> <span class="Valor">1px solid #444;</span> <span class="Propriedade">background:</span> <span class="Valor">#fff;</span>}
+              </pre>
+          </code>
+        </section>
+      </section>
+
+    </main>
+  </body>
+</html>

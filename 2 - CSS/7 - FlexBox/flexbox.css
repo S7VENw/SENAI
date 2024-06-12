@@ -1,0 +1,66 @@
+* {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #252525;
+}
+
+h1 {
+    font-size: 4.5rem;
+    color: whitesmoke;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+.item {
+    width: 7rem;
+    /* height: 7rem; */
+    background: gray;
+    border: .1rem solid rgb(30, 146, 201);
+    border-radius: 1rem;
+    font-size: 2rem;
+    color: whitesmoke;
+    /* margin: 0 .5rem; */ /* no flex box não precisamos disso */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 50vw;
+    height: 50rem;
+    border-radius: 1rem;
+    background: rgba(35, 0, 200, 0.350);
+    /* gap: 1rem; */
+    display: flex;
+    flex-direction: /* row */ /* column */ /* column-reverse */ row-reverse;
+    flex-wrap: wrap;
+    
+    justify-content: /* flex-start */ /* flex-end */ /* center */ 
+                      /* space-between */ /* space-around */ space-evenly;
+
+    align-items: /* flex-start */ /* flex-end */ /* center */
+                 /* baseline > precisa definir um tamanho pra cada item */
+                 stretch;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container2 {
+    height: 60vh;
+    row-gap: 1.5rem;
+    flex-direction: row;
+    align-content: /* flex-start */ /* flex-end */ /* center */ 
+                    /* space-between */ /* space-around */ stretch;
+}
+
+.item2 {
+    width: 10%;
+    /* height: 15rem; */
+}

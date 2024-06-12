@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        td {
+            border: 1px solid black;
+            background-color: whitesmoke;
+            color: black;
+        }
+
+        thead {
+            background-color: royalblue;
+        }
+    </style>
+
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Tabelas em HTML</h1>
+
+    <h2>O que são?</h2>
+
+    <p>
+        Sabemos que existem algums formas diferentes de reprensentar uma mesma informação. Sendo que, podemos transmiti-la seja através de um texto (descritivo, por exemplo), ou quem sabe por uma ilustrção (o que facilita mais na sua compreensão), porém a terceira forma é a que permite misturar os dois exemplos anteriormente citados: as <strong>Tabelas</strong>. <br>
+        <br> <!-- não se usa "br" para pular linha (CSS)-->
+        No HTML as tabelas, são representadas pela TAG "Table", onde teremos o trabalho de criar a sua estrutura toda manualmente, ou seja, determinar a quantidade de linhas e colunas.
+    </p>
+    <p>
+        <strong>Toda tabela é composta por três elemntos:</strong> <br>
+        <ul type="square"> <!-- ou "circle" e "disc" -->
+            <li>Colunas</li>
+            <li>Linhas</li>
+            <li>Células</li>
+        </ul>
+    </p>
+
+        <h3>Exemplo de Tabela</h3>
+
+        <table style="width: 100%; border: 1px solid black;"> <!-- início da tabela -->
+            <thead> <!-- CABEÇALHO da tabela -->
+                <tr> <!-- indica LINHA -->
+                    <th>Produtos</th> <!-- indica uma CÉLULA no cabeçalho -->
+                    <th>Quantidades</th>
+                    <th>Valores</th>
+                </tr>
+            </thead>
+            <tbody style="text-align: center;"> <!-- CORPO da tabela -->
+                <tr> <!-- indica LINHA -->
+                    <td>Mouse</td><!-- indica uma CÉLULA no corpo da tabela -->
+                    <td>2</td>
+                    <td>R$ 80,00</td>
+                </tr>
+                <tr>
+                    <td>Teclado</td>
+                    <td>1</td>
+                    <td>R$ 210,00</td>
+                </tr>
+                <tr>
+                    <td>Monitor</td>
+                    <td>3</td>
+                    <td>R$ 760,00</td>
+                </tr>
+                <tr>
+                    <td>Gabinete</td>
+                    <td>1</td>
+                    <td>R$ 450,00</td>
+                </tr>
+
+
+            </tbody>
+        </table>
+
+        <h3>Itens Selecionados</h3>
+
+        <ol type="1"> <!-- Lista ORDENADA -->
+            <li>Monitor. Valor R$760,00 (3x s/ juros)</li>
+            <li>Gabinete. Valor R$450,00</li>
+            <li><strong>Total da compra </strong> = 1210,00</li>
+        </ol>
+</body>
+</html>

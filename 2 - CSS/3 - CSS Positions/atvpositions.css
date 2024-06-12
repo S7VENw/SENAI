@@ -1,0 +1,122 @@
+* {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.logo img {
+  position: relative;
+  left: 47vw;
+  top: 0;
+  padding: 2rem 0;
+}
+
+body {
+  background-color: #262626;
+  color: white;
+}
+
+/* article {
+  margin-top: 10rem;
+} */
+
+h1 {
+  font-size: 5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  color: whitesmoke;
+  border-radius: 1rem;
+  border: solid 0.1rem gold;
+}
+
+h2 {
+  font-size: 4rem;
+  padding: 0.5rem;
+  margin: 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.subtitulo {
+  font-size: 4rem;
+  text-align: center;
+}
+
+p {
+  font-size: 2rem;
+  padding: 3rem 0 3rem 1rem;
+  font-family: "Poetsen One", sans-serif;
+}
+
+.movel {
+  width: 50%;
+}
+
+/* Inicio ambiente */
+
+.ambiente {
+  width: 80vw;
+  position: relative;
+  left: 15rem;
+  top: 2rem;
+}
+
+.artigo01 {
+  height: 30vh;
+  width: 100%;
+  position: relative;
+  top: 3rem;
+}
+
+.artigo01 img {
+  position: absolute;
+  right: 7rem;
+  top: 0;
+}
+
+.artigo01 p {
+  width: 40vw;
+  position: absolute;
+}
+
+.artigo02 {
+  height: 30vh;
+  width: 100%;
+  position: relative;
+  top: 15rem;
+  margin-bottom: 25rem;
+}
+
+.artigo02 img {
+  position: absolute;
+}
+
+.artigo02 p {
+  width: 60rem;
+  height: 40rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.fim {
+  position: relative;
+  text-align: center;
+  border-top: double black 2rem;
+  top: 15rem;
+}
+
+.fim h2 {
+  font-size: 5.5rem;
+}
+
+.fim p {
+  position: absolute;
+  left: 38.5vw;
+  width: 23vw;
+  padding: 2rem;
+  border: solid .1rem gold;
+  text-align: justify;
+  font-size: 3rem;
+  font-family: "Poetsen One", sans-serif;
+}

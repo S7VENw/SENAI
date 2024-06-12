@@ -1,0 +1,93 @@
+* {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: fixed;
+  top: 1rem;
+  left: 20%;
+  z-index: 1;
+}
+
+h1 {
+  font-size: 4rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  background-color: #262626;
+  color: whitesmoke;
+  margin: .2rem .5rem;
+  border-radius: 1rem;
+  position: fixed;
+  width: 90vw;
+}
+
+h2 {
+  font-size: 3rem;
+  padding: 0.7rem 0rem 1rem 1rem;
+  margin-top: 2rem;
+}
+
+p {
+  font-size: 2.1rem;
+  padding: 0.5rem;
+  margin: 1rem 2rem;
+}
+
+div { /* todas as DIVs deverão herdar as seguintes propriedades... */
+    width: 20vw;
+    height: 10rem;
+    padding: 0.5rem;
+    margin: 1rem 2rem;
+}
+
+.estatica {
+  background: gray;
+  position: static; /* posicionamento estático em relação ao fluxo da página */
+  top: 5rem; /* não mudará enquanto estiver definido como ESTÁTICO */
+
+  
+  /* position: sticky ---> "Gruda" na posição config. a partir do momento que fluxo */
+}
+
+.relativa {
+    background: orange;
+    border: .2rem black dashed;
+    position: relative;
+    top: -11rem;
+    left: 55vw;
+    width: 40vw;
+    height: 10rem;
+}
+
+.rel {
+    width: 50vw ;
+    text-align: justify;
+}
+
+.teste {
+    position: relative;
+}
+
+.abs {
+    width: 50vw ;
+    text-align: justify;
+    left: 50rem;
+    top: 10rem;
+    position: absolute;
+}
+
+.absoluta {
+    background: #262626;
+    border: .3rem white dotted;
+    left: 1rem;
+    top: 5rem;
+}
+
+img {
+  width: 40rem;
+  height: 30rem;
+  padding: 3rem;
+}

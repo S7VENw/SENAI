@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        td{
+        background-color: whitesmoke;
+    }
+        thead{
+            background-color: grey;
+            height: 23px;
+        }
+        tbody{
+            height: 90px;
+        }
+
+        img{
+            width: 500px;
+        }
+    </style>
+
+    <title>Imagem e Âncoras</title>
+</head>
+<body>
+    <h1 id="topo">Na aula anterior...</h1>
+
+    <h2>Listas</h2>
+    <p>
+        Sabemos que existem algumas formas de representar itens que expressão uma lista, no caso do HTML, teremos pricipalmente:
+    </p>
+
+    <dl>
+        <dt><strong>Lista Ordenada</strong></dt>
+        <dd> <!-- descrição do tema -->
+            <ol type="a">
+                <li>Exemplo 1</li>
+                <li>Exemplo 2</li>
+                <li>Exemplo 3</li>
+            </ol>
+        </dd>
+        <dt><strong>Lista Não Ordenada</strong></dt>
+        <dd>
+            <ul type="square">
+                <li>Exemplo 1</li>
+                <li>Exemplo 2</li>
+                <li>Exemplo 3</li>
+            </ul>
+        </dd>
+    </dl>
+
+    <h2>Tabelas</h2>
+    <p>
+        Trata-se de uma forme mais rápida e objetiva para representar uma determinada informação. Consiste em 3 partes: Colunas, Linhas e Células.
+    </p>
+
+    <table style="width: 100%; border: 1px solid black;"> 
+        <thead>
+            <tr> 
+                <th>Marca</th> 
+                <th>Modelo</th>
+                <th>Valor</th>
+            </tr>
+        </thead>
+        <tbody style="text-align: center;">
+            <tr>
+                <td>Mitsubishi</td>
+                <td>Lancer Evolution X</td>
+                <td>R$ 179.900</td>
+            </tr>
+            <tr>
+                <td>Porsche</td>
+                <td>718 Cayman GT4</td>
+                <td>R$ 1.089.000</td>
+            </tr>
+            <tr>
+                <td>BMW</td>
+                <td>M3 Competition</td>
+                <td>R$ 829.950</td>
+            </tr>
+            <tr>
+                <td>BMW</td>
+                <td>i4 m50</td>
+                <td>R$ 469.950</td>
+            </tr>
+
+
+        </tbody>
+    </table>
+
+    <h1>Aula de hoje</h1>
+
+    <h2>Âncoras</h2>
+    <p>
+        É responsável por vinvular os demais documentos que o nosso HTML possui, links internos. Para conseguirmos declarar essa tag, devemos incluir o atributo href e uma frase ou palavra dentro da tag &lt;a&gt;. <!-- "&lt;" e "&gt;" para aparecer "<" ">" respectivamente  --> <a href="https://www.youtube.com/watch?v=LeOVXQDsAIY" target="_blank">Saiba mais</a>
+    </p>
+
+    <a href="#topo">Topo da página</a>
+
+    <h1>Imagens</h1>
+
+    <p>
+        São formas de dar um melhor acabamento final na sua página, pois uma imagem tem a capacidade de auxiliar o leitor na compreensão do contrúdo além de proporcionar uma melhor estética.
+    </p>
+    <p>
+        A TAG reponsável por inserir imagens em um apágina HTML é a &lt;IMG&gt;. Por padrão esta TAG trará mais dois atibutos "obrigatórios":
+        <ul>
+            <li><em>src:</em> onde será descrito local, nome e extensão da imagem;</li>
+            <li><em>alt:</em> reservado para inserir um texto alterativo (para substituir quando a imagem não for carregada)</li>
+        </ul>
+
+        <ins>Sintaxe:</ins> <br>
+        <code>
+            <pre>&lt;IMG src="arquivo.extensão" alt="texto alternativo"&gt;
+            </pre>
+        </code>
+    </p>
+    <img src="Gojo.metade.jpg" alt="gojo pela metade">
+
+</body>
+</html>

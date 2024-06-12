@@ -1,0 +1,25 @@
+pre {
+    background-color: black;
+    color: white;
+    width: 80vw;
+    height: 150px;
+    font-size: 18px;
+    padding: 30px 5px 5px 0;
+    overflow: scroll;
+}
+
+.Seletor {
+    color: rgb(250, 60, 155);
+}
+
+.Propriedade {
+    color: rgb(72, 255, 0);
+}
+
+.Valor {
+    color: white;
+}
+
+.Tag {
+    color: rgb(0, 174, 255);
+}

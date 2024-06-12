@@ -1,0 +1,52 @@
+* {
+    font-size: 62.5%;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem
+}
+
+h3 {
+    font-size: 2.7rem
+}
+
+p {
+    font-size: 2rem
+}
+
+/*************************** DISPLAY: BLOCK *****************************/
+
+.container {
+    width: 85vw;
+    background: rgb(0, 66, 165);
+}
+
+.itens {
+    background: whitesmoke;
+    border: .1rem solid black;
+    font-size: 2.1rem;
+    display: block;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    margin: .5rem;
+}
+
+/*************************** DISPLAY: INLINE ****************************/
+
+.dois div {
+    display: inline;
+    width: 5rem;
+    height: 5rem;
+}
+
+/************************ DISPLAY: INLINE-BLOCK *************************/
+
+.tres div {
+    display: inline-block;
+    margin: .5rem 12%;
+}
