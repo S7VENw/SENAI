@@ -1,0 +1,88 @@
+* {
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E4DFDB;
+}
+
+.container {
+    font-size: 4.5rem;
+    width: 100vw;
+    height: 10rem;
+    border-radius: 1rem;
+    background-color: #846247;
+    display: flex;
+    flex-direction: center;   
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo img {
+    width: 20rem;
+}
+
+.item {
+    font-size: 3.5rem;
+    color: #BFA78D;
+}
+
+ /* mudar */
+ 
+.fileira {
+    width: 99.1vw;
+    height: 53vh;
+    position: relative;
+    padding: 2rem 1rem;
+    margin: 3rem 0;
+  }
+  
+  .fileira section {
+    display: inline-block;
+  }
+  
+  /* PARTE ESCRITA */
+  
+  h1 {
+    font-size: 2.7rem;
+    font-family: "Press Start 2P", system-ui;
+    padding: 1rem 0;
+  }
+  
+  h3 {
+    font-size: 2.3rem;
+    font-family: "Jaro", sans-serif;
+  }
+  
+  p {
+    font-size: 2rem;
+    font-family: "Alive in a Science Fiction", sans-serif;
+  }
+  
+  /* PARTE DAS CARTAS */
+  
+  .Cards {
+    position: absolute;
+    padding: 1.5rem 1.5rem;
+    margin: 1rem;
+    border: 0.5rem solid #262626;
+    border-radius: 2rem;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+    box-shadow: 1rem 1rem #25252549;
+  }
+  
+  .Cards:hover {
+    transform: scale(1.2);
+  }
+
+  .um {
+    left: 10vw;
+  }
+
+  .dois {
+    left: 40vw;
+  }
